@@ -13,7 +13,8 @@ const MemoModel = new Schema({
     },
     attachments: [{
         type: String
-    }]
+    }],
+    createdBy: String
 });
 
 module.exports = Memo = mongoose.model("Memo", MemoModel);
