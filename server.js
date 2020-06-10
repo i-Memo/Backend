@@ -17,6 +17,7 @@ app.get("/google", passport.authenticate("google", {
     scope: ["profile"]
 }));
 
+console.log("My first Pull-request");
 app.get("/", (req, res) => {
     res.redirect("/google");
 });
